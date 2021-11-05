@@ -7,7 +7,7 @@ const env = require('dotenv').config();
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 
-// -- Connexion à mongoose (A changé !!)
+// -- Connexion à mongoose
 mongoose.connect(process.env.MONGO_DSN, {
     useNewUrlParser: true,
     useUnifiedTopology: true
